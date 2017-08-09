@@ -1,13 +1,10 @@
-# Clone fron https://github.com/ronakg/quickr-cscope.vim
+### Clone fron [ronakg/quickr-cscope.vim](https://github.com/ronakg/quickr-cscope.vim)
 
-# Features
+### Features
 
 With quickr_cscope() function exported for global use.
 
-## Installation
-
-This plugin follows the standard runtime path structure, and as such it can be
-installed with a variety of plugin managers:
+### Installation
 
 *  [Vundle](https://github.com/gmarik/vundle)
     - `Plugin 'tryoutchen/quickr-cscope.vim'`
