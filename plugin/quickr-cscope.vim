@@ -121,6 +121,21 @@ function! s:quickr_cscope(str, query)
 endfunction
 " }}
 
+
+" Quickr_cscope {{
+function! Quickr_cscope(cmd, args)
+    if len(split(a:args)) != 3
+        echohl WarningMsg | echo "Usage: Cs f[ind] c|d|e|f|g|i|s|t name" | echohl None
+    else
+        if split(a:args)[0] !~ "^f"
+            echohl WarningMsg | echo "Usage: Cs f[ind] c|d|e|f|g|i|s|t name" | echohl None
+        else
+            call s:quickr_cscope(split(a:args)[2], split(a:args)[1])
+        endif
+    endif
+endfunction
+" }}
+
 if g:quickr_cscope_autoload_db
     if s:autoload_db() == 0
         finish
