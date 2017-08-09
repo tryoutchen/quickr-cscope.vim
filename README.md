@@ -1,4 +1,5 @@
-# This is a clone fron https://github.com/ronakg/quickr-cscope.vim, with quickr_cscope() function exported for global use.
+# Clone fron https://github.com/ronakg/quickr-cscope.vim
+# With quickr_cscope() function exported for global use.
 
 ## Installation
 
